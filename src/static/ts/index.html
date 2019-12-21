@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+        main {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        /*Make dat gui panel unselectable so it doesent get
+            selected during mouse drag*/
+        #gui {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        #info {
+            font-family: 'Raleway', sans-serif;
+            position: absolute;
+            z-index: 10;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            /*
+            margin: auto; */
+            text-align: center;
+            /* text-transform: uppercase; */
+            color: #f2f5f0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info">
+        TYCHOSIUM 3D <br />
+        Visit <a href="https://www.tychos.info" target="_blank">www.tychos.info</a>
+    </div>
+    <script src="https://cdn.rawgit.com/mrdoob/stats.js/r17/build/stats.min.js"></script>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/master/dist/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/97/three.min.js"></script>
+    <!-- <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5.1/dat.gui.min.js"></script>
+    <script src="./orbitControls.js"></script>
+    <script src="./ts.js"></script>
+
+</body>
+
+</html>
