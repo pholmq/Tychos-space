@@ -7,12 +7,12 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
    <Layout>
-     <p>Now go build something great.</p>
+     <p></p>
   <a href="ts">Tychosium 3D</a>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+  <p></p>
+    <div style={{ maxWidth: `1000px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-  //   <Link to="/page-2/">Go to page 2</Link>
    </Layout>
   
 )
