@@ -90,7 +90,8 @@ var earth = {
   orbitTilta: 0,
   orbitTiltb: 0,  
 
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/EarthDay.jpg',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/EarthDay.jpg',
+  textureUrl: '/ts/assets/EarthDay.jpg',
   visible: true,
   containerObj:"",
   orbitObj:"",
@@ -168,7 +169,8 @@ var moon = {
   orbitTilta: -1.8,
   orbitTiltb: -2.6, 
 
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Moon.jpg',
+  // textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Moon.jpg',
+  textureUrl: '/ts/assets/Moon.jpg',
   visible: true,
   containerObj:"",
   orbitObj:"",
@@ -301,7 +303,9 @@ var mercury = {
   orbitTilta: 1.3,
   orbitTiltb: -2.8, 
 
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Mercury.jpg',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Mercury.jpg',
+  textureUrl: '/ts/assets/Mercury.jpg',
+ 
   visible: true,
   containerObj:"",
   orbitObj:"",
@@ -384,7 +388,8 @@ var venus = {
   traceLength : sYear *16,
   traceStep : sWeek,
 
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/VenusAtmosphere.jpg',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/VenusAtmosphere.jpg',
+  textureUrl: '/ts/assets/VenusAtmosphere.jpg',
   visible: true,
   containerObj:"",
   orbitObj:"",
@@ -461,7 +466,8 @@ var mars = {
   traceLength : sYear * 44,
   traceStep : sWeek, 
 
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Mars.jpg',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Mars.jpg',
+  textureUrl: '/ts/assets/Mars.jpg',
   visible: true,
   containerObj:"",
   orbitObj:"",
@@ -562,7 +568,8 @@ var jupiter = {
   traceLength : sYear * 18,
   traceStep : sWeek,
   
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Jupiter.jpg',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Jupiter.jpg',
+  textureUrl: '/ts/assets/Jupiter.jpg',
   visible: true,
   containerObj:"",
   orbitObj:"",
@@ -617,8 +624,10 @@ var saturnus = {
   traceLength : sYear * 45,
   traceStep : sWeek,
 
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Saturn.jpg',
-  ringUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/saturn-rings.png',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Saturn.jpg',
+  textureUrl: '/ts/assets/Saturn.jpg',
+  //ringUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/saturn-rings.png',
+  ringUrl: '/ts/assets/saturn-rings.png',
   ringSize: 10,
   visible: true,
   containerObj:"",
@@ -678,7 +687,8 @@ var uranus = {
   traceLength : sYear * 18,
   traceStep : sWeek,
   
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Uranus.jpg',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Uranus.jpg',
+  textureUrl: '/ts/assets/Uranus.jpg',
   visible: true,
   containerObj:"",
   orbitObj:"",
@@ -734,7 +744,8 @@ var neptune = {
   traceLength : sYear * 18,
   traceStep : sWeek,
   
-  textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Neptune.jpg',
+  //textureUrl: 'https://raw.githubusercontent.com/pholmq/tsnova-resources/master/Neptune.jpg',
+  textureUrl: '/ts/assets/Neptune.jpg',
   visible: true,
   containerObj:"",
   orbitObj:"",
