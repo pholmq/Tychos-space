@@ -884,8 +884,8 @@ var o = {
             return obj.name === obj2.name
           });
           Object.assign(obj, newVals);
-          updatePlanet(obj)
-          initTrace(obj)
+          updatePlanet(obj);
+          initTrace(obj);
         });
 
       }
@@ -913,6 +913,7 @@ var o = {
   'Earth camera' : false,
   'Camera Lat': 0,
   'Camera Long': 0,
+  'Field of view': 50,
   'Polar line': false,
   'polarLineLength': 1,
   'Camera helper' : false,
@@ -1128,7 +1129,7 @@ const cameraMount = new THREE.Object3D();
 camPivotX.add(cameraMount);
 
 //const planetCamera = new THREE.PerspectiveCamera( 1000, 1600/800, 0.0001, 2000 );
-const planetCamera = new THREE.PerspectiveCamera(90, window.innerWidth/window.innerHeight, 0.001, 10000000);
+const planetCamera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.001, 100000);
 cameraMount.add(planetCamera)
 
 cameraMount.position.z = -earth.size - 0.002
@@ -1141,9 +1142,11 @@ planetCamera.add(axisHelper)
 // o['Camera helper'] = true
 
 
-function trackSun() {
+function updatePlanetCam() {
     camPivotX.rotation.x = o['Camera Lat'] + Math.PI/2
     camPivotY.rotation.y = o['Camera Long'] + Math.PI/2
+    planetCamera.fov = o['Field of view']
+    planetCamera.updateProjectionMatrix ()
 
 }
 
@@ -1272,6 +1275,7 @@ folderCam.add(o, 'Earth camera')
   folderCam.add(o, 'Camera Long', 0.00, Math.PI*2).listen()
   o['Camera Lat'] = 0.67
   o['Camera Long'] = 0
+  folderCam.add(o, 'Field of view', 0, 100).listen()
   folderCam.add(o, 'Camera helper').onFinishChange(() => {
     showHideCameraHelper()
   });  
@@ -1513,7 +1517,7 @@ function render() {
   moveModel(o.pos);
   updateElongations();
   updatePositions();
-  trackSun();
+  updatePlanetCam();
   if (o['Earth camera']) {
     renderer.render(scene, planetCamera);
 
